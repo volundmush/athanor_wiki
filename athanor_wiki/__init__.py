@@ -20,6 +20,8 @@ def init(settings, plugins):
     settings.WIKI_ACCOUNT_HANDLING = False
     settings.WIKI_ACCOUNT_SIGNUP_ALLOWED = False
 
+    settings.WIKI_CHECK_SLUG_URL_AVAILABLE = False
+
     settings.URL_INCLUDES.extend([
         ("notifications/", "django_nyt.urls"),
         ("wiki/", "wiki.urls")
